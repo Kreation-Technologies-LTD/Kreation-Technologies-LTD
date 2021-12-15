@@ -56,8 +56,8 @@
     "start:prod": "next start",
     "test": "jest --passWithNoTests",
     "deploy:ar": "yarn export && arweave deploy-dir  ../../build/web --key-file ",
-    "deploy:gh": "yarn export && gh-pages -d ../../build/web --repo https://github.com/Kreation-Technologies-LTD/Kreation-Technologies-LTD -t true",
-    "deploy": "cross-env yarn build && yarn deploy:gh",
+    "deploy:gh": "yarn export && cp CNAME ../../build/web/ && gh-pages -d ../../build/web --repo https://github.com/Kreation-Technologies-LTD/Kreation-Technologies-LTD -t true",
+    "deploy": "cross-env ASSET_PREFIX=/Kreation-Technologies-LTD/ yarn build && yarn deploy:gh",
     "format:fix": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|css|md)\""
   },
   "browserslist": {
@@ -76,7 +76,7 @@
     "type": "git",
     "url": "https://github.com/Kreation-Technologies-LTD/Kreation-Technologies-LTD"
   },
-  "homepage": "https://github.com/Kreation-Technologies-LTD/Kreation-Technologies-LTD",
+  "homepage": ".",
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
