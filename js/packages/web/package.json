@@ -76,7 +76,7 @@
     "type": "git",
     "url": "https://github.com/Kreation-Technologies-LTD/Kreation-Technologies-LTD"
   },
-  "homepage": ".",
+  "homepage": "https://github.com/Kreation-Technologies-LTD/Kreation-Technologies-LTD",
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
